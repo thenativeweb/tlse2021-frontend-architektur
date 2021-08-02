@@ -26,23 +26,19 @@ Auf dem System werden folgende Installationen benötigt:
 
 ### Installation der Abhängigkeiten
 
-Vor dem ersten Start müssen alle Abhängigkeiten in allen Ordnern einmalig installiert werden. In einem Terminal muss dazu navigieren in das Projektverzeichnis navigiert und dann folgendes eingegeben werden:
+Vor dem ersten Start müssen alle Abhängigkeiten in allen Microfrontends einmalig installiert werden. Das geht ganz einfach mit einem Terminal, in welchem per `cd` in das Projekt-Verzeichnis navigiert und dann folgendes ausgeführt wird:
 
 ```shell
 $ npm install
-$ cd container-app
-$ npm install
-$ cd ../article-page
-$ npm install
-$ cd ../article-overview
-$ npm install
 ```
+
+*Hinweis: Die Abhängigkeiten in allen Subordnern werden automatisch mitinstalliert, da in der `package.json` auf root Ebene ein `postinstall`-Schritt hinterlegt ist.*
 
 ### Starten der App(s)
 
 Je nach gewünschter Integrationsart kann die App dann (ebenfalls im Terminal) wie folgt gestarted werden.
 
-- Starten der App mit **IFrame-Implementierung**:
+- Starten der App mit **IFrame-Integration**:
 
 ```shell
 $ npm run start:iframe
