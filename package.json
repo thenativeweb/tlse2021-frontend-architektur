@@ -19,6 +19,6 @@
     "cross-env": "7.0.3",
     "eslint": "7.24.0",
     "eslint-config-es": "3.28.26",
-    "json-server": "0.16.3"
+    "json-server": "0.17.1"
   }
 }
